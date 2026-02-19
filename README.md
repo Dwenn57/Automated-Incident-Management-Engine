@@ -1,4 +1,4 @@
-# 🔐 Automated Incident Management Engine
+# Automated Incident Management Engine
 
 Custom Python automation engine designed to manage infrastructure health alerts by integrating:
 
@@ -11,11 +11,11 @@ This script replaces multiple cron-based workflows with a unified, thread-safe a
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This engine automatically manages two main flows:
 
-### 🟥 Degraded Flow (Health = DOWN / CRITICAL / WARNING / UNKNOWN)
+###  Degraded Flow (Health = DOWN / CRITICAL / WARNING / UNKNOWN)
 
 1. Searches for degraded infrastructure records.
 2. Checks if a master incident already exists.
@@ -27,7 +27,7 @@ This engine automatically manages two main flows:
 
 ---
 
-### 🟢 Operational Flow (Health = UP / OK)
+###  Operational Flow (Health = UP / OK)
 
 1. Searches for operational records.
 2. Checks for an existing escalated master.
@@ -36,7 +36,7 @@ This engine automatically manages two main flows:
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 Elasticsearch (event_records_index)  
         ↓  
@@ -62,7 +62,7 @@ This prevents:
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 The script requires a `settings.ini` file:
 
